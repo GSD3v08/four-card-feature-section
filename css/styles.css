@@ -1,0 +1,146 @@
+:root{
+    /*  Primary */
+
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-color: var(--very-light-gray);
+}
+
+.content{
+    width: 82%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    
+    /* max-width: 500px; */
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+.mission-container{
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    text-align: left;
+
+    box-shadow: 0px .3rem 1rem hsl(0, 0%, 80%);
+    border-radius: .3rem;
+}
+
+.cyan{
+    border-top: .2rem solid var(--cyan);
+}
+
+.red{
+    border-top: .2rem solid var(--red);
+}
+
+.orange{
+    border-top: .2rem solid var(--orange);
+}
+
+.blue{
+    border-top: .2rem solid var(--blue);
+}
+
+.title{
+    margin-bottom: .5rem;
+    
+    font-weight: 200;
+    
+    color: var(--very-dark-blue);
+}
+
+.subtitle{
+    margin-top: 0;
+
+    font-weight: 600;
+    
+    color: var(--very-dark-blue);
+}
+
+.goal,
+.description{
+    color: var(--grayish-blue);
+}
+
+.goal{
+    margin-bottom: 4.5rem;
+    
+    line-height: 1.3rem;
+    font-size: .93rem;
+}
+
+.feature{
+    margin-top: 0;
+    margin-bottom: .5rem;
+
+    color: var(--very-dark-blue);
+}
+.description{
+    margin-top: 0;
+    margin-bottom: 2rem;
+
+    line-height: 1.5rem;
+    font-size: .85rem;
+}
+img{
+    align-self: flex-end;
+    width: 3.5rem;
+}
+
+@media (min-width: 800px){
+
+    .mission-container{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title,
+    .subtitle{
+        font-size: 2.5rem;
+    }
+
+    .goal{
+        font-size: 1.1rem;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .cards > .card,
+    .two-cards{
+        width: 30%;
+    }
+
+}
